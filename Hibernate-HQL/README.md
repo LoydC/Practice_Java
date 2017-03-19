@@ -1,16 +1,3 @@
----
-title: Hibernate基本查询
-date: 2017-03-17 15:10:41
-tags:
-- Hibernate
-- SSH
-- 查询
-categories:
-- Java框架
----
-
-
-
 # Hibernate基本查询
 
 Query接口
@@ -232,7 +219,7 @@ Hibernate Query Language（HQL）：官方推荐的查询语言，具有以下�
 ```
 
 ```java
-/**
+	/**
 	 * HQL常见函数
 		1.字符串相关
 			upper(s) 、lower(s) 、
@@ -278,7 +265,7 @@ Hibernate Query Language（HQL）：官方推荐的查询语言，具有以下�
 ## 参数绑定?号的使用
 
 ```java
-/**
+	/**
 	 * HQL 参数绑定?号的使用
 	 */
 	@Test
@@ -576,8 +563,3 @@ Account.hbm.xml
 		
 	}
 ```
-
-------
-
-##### [源码下载](https://github.com/LoydC/Practice_Java/tree/master/Hibernate-HQL)
-

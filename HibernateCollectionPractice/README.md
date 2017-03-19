@@ -1,14 +1,3 @@
----
-title: Hibernate对集合属性的操作
-date: 2017-03-17 11:20:41
-tags:
-- Hibernate
-- SSH
-- 集合
-categories:
-- Java框架
----
-
 # Hibernate对集合属性的操作
 
 > Hibernate 框架中提供了很丰富的数据类型，来简化开发人员的困扰。比如在 JavaSE 中提供了Collection、Set、List、Map 等集合，Hibernate 为了也能让这些集合能够通过 ORM 技术和关系型数据库进行关联，Hibernate 中也提供了针对集合属性的关联映射。 
@@ -159,8 +148,4 @@ categories:
      	<element type="string" column="hobby"></element>
   </map>
   ```
-
-------
-
-[源码下载]https://github.com/LoydC/Practice_Java/tree/master/HibernateCollectionPractice
 
