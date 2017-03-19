@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="tech.loyd.entity.Address" table="address_table02">
+		<!-- 生成对象唯一的OID标示符 -->
+		<id name="id" column="id" type="integer">
+			<generator class="native"/>
+		</id>
+		<property name="address"/>
+		  <!-- one-to-one映射一对一关联     property-ref属性：指定反向属性引用 -->
+		<one-to-one name="account" property-ref="address_id"></one-to-one>
+		
+	</class>
+
+</hibernate-mapping>
