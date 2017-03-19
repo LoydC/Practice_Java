@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="tech.loyd.entity.IDCard" table="idcard_tab2">
+		<!-- 生成对象唯一的OID标示符 -->
+		<id name="id">
+			<generator class="foreign">
+			<param name="property">citizen</param>
+			</generator>
+		</id>
+		<property name="no"/>
+		<!-- 
+			constrained 告诉当前主键，你的值时采用另个表中的主键的值
+			当前主键对于有关系的另一个表来说就是外键。
+		 -->
+		<one-to-one name="citizen" constrained="true"></one-to-one>
+	</class>
+
+</hibernate-mapping>
