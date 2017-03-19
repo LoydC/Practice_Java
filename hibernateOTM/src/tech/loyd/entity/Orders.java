@@ -1,0 +1,61 @@
+package tech.loyd.entity;
+
+import java.util.Date;
+
+/**
+ * @author chenlide
+ * 单向的一对多，多的一段
+ */
+public class Orders {
+
+	private int id;
+	private String orderNum;
+	private Date orderTime;
+	
+	public Orders(){
+		
+	}
+
+	/**
+	 * @return the id
+	 */
+	public int getId() {
+		return id;
+	}
+
+	/**
+	 * @param id the id to set
+	 */
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	/**
+	 * @return the orderNum
+	 */
+	public String getOrderNum() {
+		return orderNum;
+	}
+
+	/**
+	 * @param orderNum the orderNum to set
+	 */
+	public void setOrderNum(String orderNum) {
+		this.orderNum = orderNum;
+	}
+
+	/**
+	 * @return the orderTime
+	 */
+	public Date getOrderTime() {
+		return orderTime;
+	}
+
+	/**
+	 * @param orderTime the orderTime to set
+	 */
+	public void setOrderTime(Date orderTime) {
+		this.orderTime = orderTime;
+	}
+	
+}
